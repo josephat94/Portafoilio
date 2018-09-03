@@ -1,17 +1,28 @@
 
 body{
     margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+background: #151515;;
+color: white;
+}
+body h2{
+font-size: 33px;
 
 }
 .header{
+
+
+    position: fixed;
 width: 100%;
 height: 10vh;
-background: rgb(53, 49, 49);
+
 display: flex;
 justify-content: flex-end;
 align-items: center;
-background: 
-#151515
+background:    #151515;
+-webkit-box-shadow: 1px 5px 26px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 5px 26px -1px rgba(0,0,0,0.75);
+box-shadow: 1px 5px 26px -1px rgba(0,0,0,0.75);
 }
 
 .header ul{
@@ -25,14 +36,86 @@ color: white;
 display: inline;
 font-size: 24px;
 margin-right: 30px;
+
+}
+
+.header ul li a{
+    text-decoration: none;
+   transition-duration: .4s;
+    color: rgba(255, 255, 255, 0.657);
+}
+
+.header ul li a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.header ul li a:focus{
+    transition-duration: .7s;
+    text-decoration: none;
+    color: white;
+    border-bottom: 4px solid white;
+}
+
+.izq-panel-header{
+
+    width: 30%;
+    background:#151515;
+    height: 100%;;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: white;
+
+}
+#Aboutme{
+    display: flex;
+    flex-direction: row;
+}
+
+#Experience{
+    display: flex;
+    flex-direction: row;
+}
+#Skills{    display: flex;
+    flex-direction: row;}
+
+
+.der-panel-content{
+
+    width: 70%;
+    background: #151515;
+    height: 100%;;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: white;
+
+
 }
 .banner{
 
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background: 
-    #151515
- 
+    #151515;
+    display: flex;
+    flex-direction: row;
+ color: white;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.banner h1{
+
+padding-right: 4%;    
+}
+.banner h4{
+    color: rgba(255, 255, 255, 0.657);
 }
 .banner img{
   
@@ -54,10 +137,15 @@ align-content: center;
 
 
 }
+
+.resume-container{
+
+
+}
 .section{
 
     height:  100vh;
-    background: yellow;
+    background: #151515;
     margin-bottom: 1vh;
 
 }
@@ -75,7 +163,275 @@ align-content: center;
 
     width: 100%;
     height: 25vh;
-    background: rgb(53, 49, 49);
+      background: #151515;
+
+}
+.foo ul{
+    list-style: none;
+    display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+}
+.foo ul li{
+    display: inline;
+  margin-right: 10%;
+}
+
+#resume-container{
+    background: transparent;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-download{
+    transition-duration: .4s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+width: 350px;
+height: 70px;
+background: transparent;
+border: 1px solid rgba(255, 255, 255, 0.657);
+border-radius: 5px;
+}
+
+.box-download::before{
+    content: '';
+position: absolute;
+width: 350px;;
+height: 70px;
+background: transparent;
+transition-duration: .1s;
+}
+
+.box-download:hover::before{
+    content: '';
+    transition-duration: .3s;
+border: 6px solid rgba(255, 255, 255, 0.657);
+border-radius: 5px;
+}
+
+#Exp-tools ul{
+list-style: none;
 
 }
 
+#Exp-tools ul li{
+    list-style: none;
+  margin-bottom: 20px;
+    }
+
+    #f1{
+
+background-image: url('https://images.unsplash.com/photo-1532748963450-28fb1237984b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c359d74b85c2b5f959e5865f229a8b7b&auto=format&fit=crop&w=750&q=80');
+background-size: cover;
+background-position: center;
+
+    
+}
+
+#f2{
+
+    background-image: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cbe45d5a16eeb2c8009b0959f15db36a&auto=format&fit=crop&w=750&q=80');
+    background-size: cover;
+background-position: center;
+}
+
+#f3{
+
+    background-image: url('https://images.unsplash.com/photo-1533518509997-eddedc7f704e?ixlib=rb-0.3.5&s=f8c169e278b7a0556176d4b33715357e&auto=format&fit=crop&w=334&q=80');
+    background-size: cover;
+background-position: center;  
+}
+
+
+
+#f4{
+
+    background-image: url('https://images.unsplash.com/photo-1517697471339-4aa32003c11a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=536017f343bb7c828ade2c684f2856dc&auto=format&fit=crop&w=1510&q=80');
+
+    background-size: cover;
+background-position: center;  
+}
+
+.arreglo{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 28px;
+    font-weight: 200;
+text-transform: capitalize
+
+}
+
+.single-box{
+    cursor: pointer;
+animation-duration: 3s;
+transition-duration: .4s;
+    width: 30%;
+    height: 25%;;
+    background: transparent;
+    margin-left: 1%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 1px solid gray;
+}
+
+.single-box:hover{
+    font-weight: bold;
+    font-size: 21px;
+    background: white;
+    color: black;
+}
+
+
+.animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.animate-spin{animation:w3-spin .5s  }@keyframes w3-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+
+
+
+@media only screen and (min-width: 360px) {
+    body h2{
+        font-size: 23px;
+        
+        }
+
+        #Aboutme{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #Skills{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align:center; 
+        }
+
+        #Experience{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align:center; 
+            height: auto;
+        }
+
+        .single-box{
+           width:47%;
+           height: 120px;
+        }
+        .izq-panel-header{
+
+width:100%;
+        }
+        .der-panel-content{
+text-align: center; 
+            width: 100%;
+        }
+
+
+        .header{
+
+
+            position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background:    #151515;
+        -webkit-box-shadow: 1px 5px 26px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 1px 5px 26px -1px rgba(0,0,0,0.75);
+        box-shadow: 1px 5px 26px -1px rgba(0,0,0,0.75);
+
+        
+    }
+    .header ul{
+        width: 100%;
+        padding: 0px;
+    }
+        .header ul li{
+            margin-right: 0px;
+            width: 100%;
+            text-align: center;
+            margin: 0px;
+display: block;
+        }
+
+}
+@media only screen and (min-width: 768px) {
+
+    #Aboutme{
+        display: flex;
+        flex-direction: row;
+    }
+    #Skills{
+
+        display: flex;
+        flex-direction: row; 
+    }
+    #Experience{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align:center; 
+        height: 100vh;
+    }
+    .der-panel-content{
+        width: 100%;
+    }
+    .izq-panel-header{
+
+        width:30%;
+                }
+
+                .single-box{
+                    cursor: pointer;
+                animation-duration: 3s;
+                transition-duration: .4s;
+                    width: 30%;
+                    height: 25%;;
+                    background: transparent;
+                    margin-left: 1%;
+                    margin-top: 1%;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    border: 1px solid gray;
+                }
+
+                .header{
+
+
+                position: fixed;
+                width: 100%;
+                top: 0px;
+                height: 10vh;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                background:    #151515;
+                -webkit-box-shadow: 1px 5px 26px -1px rgba(0,0,0,0.75);
+                -moz-box-shadow: 1px 5px 26px -1px rgba(0,0,0,0.75);
+                box-shadow: 1px 5px 26px -1px rgba(0,0,0,0.75);
+                }
+
+                .header ul li{
+                    display: inline;
+                }
+    /* For desktop: */}
